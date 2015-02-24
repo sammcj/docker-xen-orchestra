@@ -1,2 +1,48 @@
-# docker-xen-orchestra
 Docker config to setup XO which is a web interface to visualize and administrate your XenServer (or XAPI enabled) hosts
+
+See https://xen-orchestra.com for information on Xen Orchestra
+
+## THIS IS A WIP - YMMV
+
+## Running the app 
+
+#### From Docker Hub
+
+```
+docker pull sammcj/docker-xen-orchestra
+docker run docker run -d -p 8000:80 sammcj/docker-xen-orchestra
+```
+
+### Building
+
+```
+git clone https://github.com/sammcj/docker-xen-orchestra.git
+cd docker-xen-orchestra
+# Edit whatever config you want to change
+docker build -t xen-orchestra . 
+```
+
+## SSL
+
+Always use SSL in production or when transmitting sensitive information during testing.
+For example you could:
+
+1) Run Nginx in front of the container to provide SSL
+2) Edit the sample config to point to your certificates which you will add into the image (be careful with this)
+See https://github.com/vatesfr/xo-server/blob/master/sample.config.yaml for available options
+
+### Support
+
+* This Docker project is not supported by Xen-Orchestra or the parent company Vates.
+* Xen-Orchestra also provides a fully-supported, turn-key appliance, see: https://xen-orchestra.com/pricing.html
+* Pull requests appreciated!
+
+#### TODO
+
+* Persistant storage
+* Currently runs Redis inside the container which is gross - especially if you already have a redis cluster elsewhere.
+* Write some tests
+* Make image smaller (delete any npm cache etc...)
+* Accept opions as environment variables
+
+Please consider supporting Xen-Orchestra, it's a great product with a bright future.
