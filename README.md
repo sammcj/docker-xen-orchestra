@@ -12,7 +12,7 @@ NOTE: THIS IS A WIP - YMMV
 
 ```
 docker pull sammcj/docker-xen-orchestra
-docker run docker run -d -p 8000:80 sammcj/docker-xen-orchestra
+docker run -d -p 8000:80 sammcj/docker-xen-orchestra
 ```
 
 ### Building
