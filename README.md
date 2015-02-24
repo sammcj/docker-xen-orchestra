@@ -2,6 +2,8 @@
 
 See https://xen-orchestra.com for information on Xen Orchestra
 
+![main_view](https://cloud.githubusercontent.com/assets/862951/6341155/b4d5b9da-bc1b-11e4-8352-a1688c571e5b.png)
+
 NOTE: THIS IS A WIP - YMMV
 
 ## Running the app 
