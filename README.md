@@ -4,9 +4,7 @@ See https://xen-orchestra.com for information on Xen Orchestra
 
 ![main_view](https://cloud.githubusercontent.com/assets/862951/6341155/b4d5b9da-bc1b-11e4-8352-a1688c571e5b.png)
 
-NOTE: THIS IS A WIP - YMMV
-
-## Running the app 
+## Running the app
 
 #### From Docker Hub
 
@@ -21,7 +19,7 @@ docker run -d -p 8000:80 sammcj/docker-xen-orchestra
 git clone https://github.com/sammcj/docker-xen-orchestra.git
 cd docker-xen-orchestra
 # Edit whatever config you want to change
-docker build -t xen-orchestra . 
+docker build -t xen-orchestra .
 ```
 
 ## SSL
@@ -41,10 +39,7 @@ See https://github.com/vatesfr/xo-server/blob/master/sample.config.yaml for avai
 
 #### TODO
 
-* Persistant storage
-* Currently runs Redis inside the container which is gross - especially if you already have a redis cluster elsewhere.
-* Write some tests
-* Accept opions as environment variables
+* See issues
 
 Please consider supporting Xen-Orchestra, it's a great product with a bright future.
 
