@@ -1,5 +1,7 @@
 ### Docker config to setup XO which is a web interface to visualize and administrate your XenServer (or XAPI enabled) hosts
 
+[![Join the chat at https://gitter.im/sammcj/docker-xen-orchestra](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammcj/docker-xen-orchestra?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 See https://xen-orchestra.com for information on Xen Orchestra
 
 ![main_view](https://cloud.githubusercontent.com/assets/862951/6341155/b4d5b9da-bc1b-11e4-8352-a1688c571e5b.png)
