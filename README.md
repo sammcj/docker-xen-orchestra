@@ -44,7 +44,6 @@ See https://github.com/vatesfr/xo-server/blob/master/sample.config.yaml for avai
 * Persistant storage
 * Currently runs Redis inside the container which is gross - especially if you already have a redis cluster elsewhere.
 * Write some tests
-* Make image smaller (delete any npm cache etc...)
 * Accept opions as environment variables
 
 Please consider supporting Xen-Orchestra, it's a great product with a bright future.
