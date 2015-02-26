@@ -6,6 +6,8 @@ See https://xen-orchestra.com for information on Xen Orchestra
 
 ## Running the app
 
+Updates are pushed to the Docker Hub's automated build service: https://registry.hub.docker.com/u/sammcj/docker-xen-orchestra
+
 #### From Docker Hub
 
 ```
