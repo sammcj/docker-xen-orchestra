@@ -18,8 +18,8 @@ RUN curl https://deb.nodesource.com/node/pool/main/n/nodejs/nodejs_0.10.36-1node
         > node.deb && dpkg -i node.deb && rm node.deb
 
 # Clone code
-RUN git clone http://github.com/vatesfr/xo-server && \
-    git clone http://github.com/vatesfr/xo-web && \
+RUN git clone --depth=1 http://github.com/vatesfr/xo-server && \
+    git clone --depth=1 http://github.com/vatesfr/xo-web && \
     rm -rf xo-server/.git xo-web/.git xo-server/sample.config.yaml
 
 # Build dependancies then cleanup
