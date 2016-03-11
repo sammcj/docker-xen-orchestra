@@ -14,8 +14,9 @@ RUN apt-get -qq update && \
       lsb-release python-all rlwrap redis-server libpng-dev git python-minimal supervisor && \
     apt-get autoremove -qq && apt-get clean && rm -rf /usr/share/doc /usr/share/man /var/log/* /tmp/*
 
-RUN curl https://deb.nodesource.com/node/pool/main/n/nodejs/nodejs_0.10.36-1nodesource1~jessie1_amd64.deb \
-        > node.deb && dpkg -i node.deb && rm node.deb
+RUN curl -o /usr/local/bin/n https://raw.githubusercontent.com/visionmedia/n/master/bin/n && \
+    chmod +x /usr/local/bin/n && \
+    n stable
 
 # Clone code
 RUN git clone --depth=1 http://github.com/vatesfr/xo-server && \
