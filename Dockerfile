@@ -26,9 +26,10 @@ RUN git clone --depth=1 http://github.com/vatesfr/xo-server && \
 # Build dependancies then cleanup
 RUN apt-get -qq install --no-install-recommends make gcc g++ && \
         npm install -g npm --unsafe-perm && \
+	npm install -g gulp --unsafe-perm && \
         cd /app/xo-server && npm install --unsafe-perm && \
     cd /app/xo-web && npm install --unsafe-perm && \
-    /app/xo-web/gulp --production && \
+    gulp --production && \
     rm -rf ~/.npm /tmp/* /var/log/* /app/xo-web/node_modules \
         /var/lib/apt/lists/* && npm cache clean && \
     apt-get purge -qq gcc g++ make && apt-get clean -qq && \
